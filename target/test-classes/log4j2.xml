@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+
+	<!-- Logging Properties -->
+	<Properties>
+		<Property name="LOG_PATTERN">%d{yyyy-MM-dd'T'HH:mm:ss.SSSZ}  [%t] %-5level %logger{36} - %msg%n</Property>
+		<Property name="APP_LOG_ROOT">logs</Property>
+	</Properties>
+	<Appenders>
+
+		<!-- Console Appender -->
+		<Console name="Console" target="SYSTEM_OUT" follow="true">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+		</Console>
+
+		<!-- File Appenders on need basis -->
+		<RollingFile name="frameworkLog" fileName="${APP_LOG_ROOT}/app-framework.log" filePattern="${APP_LOG_ROOT}/app-framework-${LOG_PATTERN}.log">
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="traceLog" fileName="${APP_LOG_ROOT}/app-trace.log" filePattern="${APP_LOG_ROOT}/app-trace-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="TRACE" maxLevel="TRACE" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="debugLog" fileName="${APP_LOG_ROOT}/app-debugLog.log" filePattern="${APP_LOG_ROOT}/app-debugLog-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="DEBUG" maxLevel="DEBUG" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="warnLog" fileName="${APP_LOG_ROOT}/app-warnLog.log" filePattern="${APP_LOG_ROOT}/app-warnLog-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="errorLog" fileName="${APP_LOG_ROOT}/app-errorLog.log" filePattern="${APP_LOG_ROOT}/app-errorLog-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+		<RollingFile name="fatalLog" fileName="${APP_LOG_ROOT}/app-fatalLog.log" filePattern="${APP_LOG_ROOT}/app-fatalLog-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="FATAL" maxLevel="FATAL" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
+
+
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="frameworkLog" />
+			<AppenderRef ref="traceLog" />
+			<AppenderRef ref="debugLog" />
+			<AppenderRef ref="warnLog" />
+			<AppenderRef ref="errorLog" />
+			<AppenderRef ref="fatalLog" />
+			
+			
+		</Root>
+
+	</Loggers>
+
+</Configuration>

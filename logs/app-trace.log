@@ -1,0 +1,52 @@
+2022-08-12T16:28:12.142-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2711f355
+2022-08-12T16:28:12.145-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5c301c47
+2022-08-12T16:28:12.148-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@41e75538
+2022-08-12T16:28:12.150-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@72f7c2e7
+2022-08-12T16:28:12.152-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@776b4ac7
+2022-08-12T16:28:12.154-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2b65a249
+2022-08-12T16:28:12.157-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@50d07c88
+2022-08-12T16:28:12.160-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1cfc7c8f
+2022-08-12T16:28:14.491-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting the url - https://rahulshettyacademy.com/
+2022-08-12T16:28:19.895-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Home
+2022-08-12T16:28:19.965-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:28:20.040-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: btn-theme
+2022-08-12T16:28:20.113-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:28:21.789-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: heading3
+2022-08-12T16:28:21.849-0400  [AsyncHttpClient-1-4] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+2022-08-12T16:28:23.750-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting the url - https://rahulshettyacademy.com/
+2022-08-12T16:28:27.637-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:28:29.797-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: heading3
+2022-08-12T16:28:29.845-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: v-middle
+2022-08-12T16:28:29.904-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Sign Up
+2022-08-12T16:28:29.966-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Forgot Password
+2022-08-12T16:28:30.025-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.id: email
+2022-08-12T16:28:30.121-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.id: password
+2022-08-12T16:28:30.215-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: btn-primary
+2022-08-12T16:28:30.311-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.xpath: //span[@class='navbar-current-user']
+2022-08-12T16:28:33.305-0400  [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+2022-08-12T16:51:07.606-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@491701b
+2022-08-12T16:51:07.609-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@4a41a09b
+2022-08-12T16:51:07.610-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@1acce172
+2022-08-12T16:51:07.612-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@6765b5d4
+2022-08-12T16:51:07.614-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@60437650
+2022-08-12T16:51:07.615-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@274147bb
+2022-08-12T16:51:07.622-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@5a7bf550
+2022-08-12T16:51:07.624-0400  [TestNG-tests-1] TRACE io.netty.channel.nio.NioEventLoop - instrumented a special java.util.Set into: sun.nio.ch.WindowsSelectorImpl@10fa30de
+2022-08-12T16:51:10.329-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting the url - https://rahulshettyacademy.com/
+2022-08-12T16:51:15.827-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Home
+2022-08-12T16:51:15.901-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:51:15.976-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: btn-theme
+2022-08-12T16:51:16.051-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:51:17.595-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: heading3
+2022-08-12T16:51:17.656-0400  [AsyncHttpClient-1-4] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
+2022-08-12T16:51:20.410-0400  [TestNG-tests-1] TRACE com.qa.app.listeners.WebEventListener - Before getting the url - https://rahulshettyacademy.com/
+2022-08-12T16:51:24.355-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: register-btn
+2022-08-12T16:51:26.838-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: heading3
+2022-08-12T16:51:26.886-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: v-middle
+2022-08-12T16:51:26.943-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Sign Up
+2022-08-12T16:51:27.002-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.linkText: Forgot Password
+2022-08-12T16:51:27.058-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.id: email
+2022-08-12T16:51:27.152-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.id: password
+2022-08-12T16:51:27.247-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.className: btn-primary
+2022-08-12T16:51:27.323-0400  [TestNG-test=Tests in  Firefox-1] TRACE com.qa.app.listeners.WebEventListener - Before getting WebElement - By.xpath: //span[@class='navbar-current-user']
+2022-08-12T16:51:30.208-0400  [AsyncHttpClient-1-7] TRACE io.netty.handler.codec.http.websocketx.WebSocket08FrameEncoder - Encoding WebSocket Frame opCode=8 length=26
