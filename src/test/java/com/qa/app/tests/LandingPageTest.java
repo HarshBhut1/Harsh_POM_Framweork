@@ -6,7 +6,6 @@ import org.testng.annotations.Test;
 
 import com.qa.app.base.TestBase;
 import com.qa.app.pages.LandingPage;
-import com.qa.app.pages.LoginPage;
 import com.qa.app.utils.Constants;
 
 public class LandingPageTest extends TestBase{
@@ -47,11 +46,12 @@ public class LandingPageTest extends TestBase{
 	@Test(priority = 5, description = "Clicking on Login Button and verifying that user is on Login Page")
 	public void getLogin() {
 		
-		LoginPage loginPage = landingPage.getLogin();
+		loginPage = landingPage.getLogin();
 		String header = loginPage.getHeader();
 		String expected = Constants.LOG_IN_PAGE_HEADER;
 		Assert.assertEquals(header, expected);
 		
 	}
 	
+
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite thread-count="1" name="Suite" parallel ="tests" verbose="3">
+<suite thread-count="5" name="Suite" parallel="tests" verbose="3">
 
 	<listeners>
 		<listener class-name="com.qa.app.listeners.AnnotationTransformer" />
@@ -9,27 +9,53 @@
 	</listeners>
 
 	<!-- Start First Test-->
-	<test name="Landing Page in Chrome" thread-count="1">
-		<parameter name="browser" value="chrome" />
+	<test name="Landing Page in Chrome">
+		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="com.qa.app.tests.LandingPageTest" />
+
 		</classes>
 	</test> <!-- End First Test-->
 
-	<!-- Start First Test -->
-	<test name="Tests in  Firefox" parallel="methods" thread-count="1">
-		<parameter name="browser" value="firefox" />
+	<!-- Start First Test-->
+	<test name="Login Page in Chrome">
+		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="com.qa.app.tests.LoginPageTest" />
 		</classes>
 	</test> <!-- End First Test-->
 
-	<!-- Start First Test
-	<test name="Tests in  Edge" parallel="methods" thread-count="1">
+	<!--
+	<test name="Landing Page in FireFox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.app.tests.LandingPageTest" />
+
+		</classes>
+	</test> -->
+
+	<!--
+	<test name="Login Page in FireFox" >
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.qa.app.tests.LoginPageTest"/>
+		</classes>
+	</test> -->
+
+	
+	<test name="Landing Page in Edge" >
 		<parameter name="browser" value="edge" />
 		<classes>
-			<class name="com.qa.app.tests.LoginTest" />
+			<class name="com.qa.app.tests.LandingPageTest" />
 		</classes>
-	</test> End First Test-->
+	</test>
+
+	
+	<test name="Login Page in Edge" >
+		<parameter name="browser" value="edge" />
+		<classes>
+			<class name="com.qa.app.tests.LoginPageTest" />
+		</classes>
+	</test> 
 
 </suite>

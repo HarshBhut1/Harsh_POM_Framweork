@@ -12,7 +12,7 @@ public class Constants {
 	/*********String Constant values for Assertion**************/
 	
 	
-	public static final String LANDING_PAGE_TITTLE = "Rahul Shetty Academy123";
+	public static final String LANDING_PAGE_TITTLE = "Rahul Shetty Academy";
 	public static final String LANDING_PAGE_HEADER = "Home";
 	public static final String LOG_IN_PAGE_HEADER = "Log in";
 	public static final String USER_LOGGED_IN_WITH_USERNAME = "Harsh Bhut";

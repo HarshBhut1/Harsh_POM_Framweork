@@ -36,6 +36,14 @@
 				<SizeBasedTriggeringPolicy size="10MB" />
 			</Policies>
 		</RollingFile>
+		
+		<RollingFile name="infoLog" fileName="${APP_LOG_ROOT}/app-infoLog.log" filePattern="${APP_LOG_ROOT}/app-infoLog-${LOG_PATTERN}.log">
+			<LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout pattern="${LOG_PATTERN}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10MB" />
+			</Policies>
+		</RollingFile>
 
 		<RollingFile name="warnLog" fileName="${APP_LOG_ROOT}/app-warnLog.log" filePattern="${APP_LOG_ROOT}/app-warnLog-${LOG_PATTERN}.log">
 			<LevelRangeFilter minLevel="WARN" maxLevel="WARN" onMatch="ACCEPT" onMismatch="DENY" />
@@ -70,6 +78,7 @@
 			<AppenderRef ref="frameworkLog" />
 			<AppenderRef ref="traceLog" />
 			<AppenderRef ref="debugLog" />
+			<AppenderRef ref="infoLog" />
 			<AppenderRef ref="warnLog" />
 			<AppenderRef ref="errorLog" />
 			<AppenderRef ref="fatalLog" />

@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -30,30 +32,35 @@ public class DriverFactory {
 	TakesScreenshot ts;
 	WebDriverListener d_Listener;
 	EventFiringDecorator event_Driver;
+	OptionsManager optionsManager;
 	public static ThreadLocal<WebDriver> tl_Driver = new ThreadLocal<WebDriver>();
+	public static Logger log = LogManager.getLogger(DriverFactory.class.getName());
 
 	public WebDriver init_Driver(Properties prop) {
 
 		String browserName = prop.getProperty("browser");
 		String url = prop.getProperty("url");
 		System.out.println(url);
+		optionsManager = new OptionsManager(prop);
+		
+		log.info("Running test in Browser - " + browserName);
 
 		if (browserName.equalsIgnoreCase(Browsers.chrome.toString())) {
 			
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(optionsManager.getChromeOptions());
 			tl_Driver.set(driver);
 			
 		} else if (browserName.equalsIgnoreCase(Browsers.firefox.toString())) {
 			
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FirefoxDriver(optionsManager.getFirefoxOptions());
 			tl_Driver.set(driver);
 			
 		} else if (browserName.equalsIgnoreCase(Browsers.edge.toString())) {
 			
 			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver = new EdgeDriver(optionsManager.getEdgeOptions());
 			tl_Driver.set(driver);
 			
 		} else {
@@ -72,7 +79,7 @@ public class DriverFactory {
 		return driver;
 	}
 	
-	public WebDriver getDriver() {
+	public static synchronized WebDriver getDriver() {
 
 		return tl_Driver.get();
 	}
@@ -81,14 +88,12 @@ public class DriverFactory {
 	public Properties init_Properties() {
 		ip = null;
 		prop = new Properties();
-
 		try {
 			ip = new FileInputStream(
 					System.getProperty("user.dir") + "/src/test/resources/configuration/qa.config.properties");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
 		try {
 			prop.load(ip);
 		} catch (IOException e) {
@@ -109,11 +114,6 @@ public class DriverFactory {
 			System.out.println("Getting error in creating Screenshot");
 			e.printStackTrace();
 		}
-		
-		
-		
-
-	
 		return DestinationFile;
 	}
 }
