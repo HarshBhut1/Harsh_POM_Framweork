@@ -32,3 +32,16 @@
 2022-08-12T19:47:14.773-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
 2022-08-12T19:47:19.490-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
 2022-08-12T19:47:19.897-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:26:57.060-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:26:58.196-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:27:02.241-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:27:03.348-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:27:07.415-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:27:08.463-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:40.969-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:41.573-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:46.470-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:46.738-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:51.911-0400  [TestNG-tests-2] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:51.926-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException
+2022-08-14T15:35:57.387-0400  [TestNG-tests-4] ERROR com.qa.app.listeners.WebEventListener - Error has occured with Exception - : java.lang.reflect.InvocationTargetException

@@ -1,6 +1,7 @@
 com\qa\app\driverFactory\DriverFactory.class
 com\qa\app\pages\HomePage.class
 com\qa\app\utils\Xls_Reader.class
+com\qa\app\driverFactory\OptionsManager.class
 com\qa\app\base\Page.class
 com\qa\app\utils\Browsers.class
 com\qa\app\pages\LoginPage.class

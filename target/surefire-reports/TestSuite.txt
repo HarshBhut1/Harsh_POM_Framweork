@@ -1,8 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 1, Errors: 0, Skipped: 3, Time elapsed: 26.101 s <<< FAILURE! - in TestSuite
-landingPageTittleTest(com.qa.app.tests.LandingPageTest)  Time elapsed: 0.298 s  <<< FAILURE!
-java.lang.AssertionError: expected [Rahul Shetty Academy123] but found [Rahul Shetty Academy]
-	at com.qa.app.tests.LandingPageTest.landingPageTittleTest(LandingPageTest.java:25)
+Tests run: 26, Failures: 2, Errors: 0, Skipped: 6, Time elapsed: 39.582 s <<< FAILURE! - in TestSuite
+doLogin(com.qa.app.tests.LoginPageTest)  Time elapsed: 0.057 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.app.tests.LoginPageTest.doLogin(LoginPageTest.java:44)
+
+doLogin(com.qa.app.tests.LoginPageTest)  Time elapsed: 5.451 s  <<< FAILURE!
+java.lang.NullPointerException
+	at com.qa.app.tests.LoginPageTest.doLogin(LoginPageTest.java:45)
 
